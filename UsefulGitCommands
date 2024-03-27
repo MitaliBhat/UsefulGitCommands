@@ -1,0 +1,43 @@
+# Initialize a new Git repository
+git init
+
+# Add a remote repository (replace <repository_URL> with your GitHub repository URL)
+git remote add origin <repository_URL>
+
+# Add all files to the staging area
+git add .
+
+# Commit the changes
+git commit -m "Initial commit"
+
+# Push the changes to the remote repository (replace 'main' with your branch name if different)
+git push -u origin main
+
+# Pull remote changes (if needed)
+git pull origin main
+
+# Resolve conflicts (if any)
+# - Identify conflicted files
+# - Resolve conflicts manually in your code editor
+# - Mark conflicts as resolved
+# - Add resolved files to staging area
+# - Commit changes
+
+# Push changes again
+git push origin main
+
+# Merge unrelated histories (if needed)
+git merge origin/main --allow-unrelated-histories
+
+# Resolve conflicts (if any)
+# - Identify conflicted files
+# - Resolve conflicts manually in your code editor
+# - Mark conflicts as resolved
+# - Add resolved files to staging area
+# - Commit changes
+
+# Complete the merge
+git commit -m "Merge unrelated histories"
+
+# Push changes
+git push origin main
